@@ -1,59 +1,31 @@
-# LojaProdutos
+# Mamão — loja demonstrativa Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.8.
+Este pacote corrige a ausência da pasta `src` no ZIP fornecido, criando uma loja de demonstração funcional com catálogo, busca, filtros por categoria e carrinho interativo. Os produtos e preços são fictícios. O código original das páginas **não estava presente** no ZIP e não pôde ser recuperado.
 
-## Development server
+## Como executar no Windows
 
-To start a local development server, run:
+1. Extraia este arquivo ZIP.
+2. No VS Code, abra a pasta `mamao` (a que contém `package.json`).
+3. Abra o terminal nessa pasta e execute:
 
-```bash
-ng serve
+```powershell
+npm install
+npx ng serve --open
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. Se não abrir automaticamente, acesse http://localhost:4200/.
 
-## Code scaffolding
+> O projeto foi ajustado para execução no navegador, sem SSR, porque os arquivos necessários ao servidor não estavam presentes. A loja é apenas demonstrativa; checkout e pagamento real não estão configurados.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Onde personalizar
 
-```bash
-ng generate component component-name
-```
+- `src/app/app.component.ts` — produtos, preços, categorias e interações.
+- `src/app/app.component.html` — conteúdo das telas.
+- `src/app/app.component.css` — visual do site.
+- `src/styles.css` — estilos globais.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Fotos e easter egg
 
-```bash
-ng generate --help
-```
+Os cartões de produto, a faixa principal e a seção Sobre usam fotografias reais de Unsplash/Pexels exibidas por URLs HTTPS. **É necessário ter conexão com a internet para carregar essas imagens.** Créditos e fontes: Unsplash (fotos de mamão e suco), Pexels (cesta de frutas 12597141, mel 7939743, vitamina 4051764, castanhas 5472169 e frutas 8426698). As fotos são ilustrativas, não representam um estoque real.
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Clique no logotipo `mamão.` **no rodapé** para revelar o easter egg. Feche pelo X, clicando fora da caixa ou no botão de fechar.
